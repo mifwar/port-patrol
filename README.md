@@ -8,6 +8,8 @@ A terminal UI to inspect listening ports and terminate the owning process.
 
 Built with [Ink](https://github.com/vadimdemedes/ink) + [React](https://react.dev).
 
+![Port Patrol - Main view](./assets/port-patrol.png)
+
 ## Features
 
 - **List all listening ports** with process info
