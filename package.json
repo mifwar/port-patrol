@@ -1,0 +1,56 @@
+{
+  "name": "port-patrol",
+  "version": "1.0.0",
+  "description": "TUI to inspect listening ports and terminate the owning process.",
+  "type": "module",
+  "license": "MIT",
+  "author": "mifwar",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mifwar/port-patrol.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mifwar/port-patrol/issues"
+  },
+  "homepage": "https://github.com/mifwar/port-patrol#readme",
+  "keywords": [
+    "tui",
+    "terminal",
+    "ports",
+    "network",
+    "process",
+    "cli",
+    "ink"
+  ],
+  "bin": {
+    "port-patrol": "dist/cli.js",
+    "pp": "dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "dev": "npx tsx src/cli.ts",
+    "build": "tsc -p tsconfig.build.json",
+    "postbuild": "chmod +x dist/cli.js",
+    "prepublishOnly": "npm run build",
+    "format": "prettier . --write",
+    "format:check": "prettier . --check"
+  },
+  "dependencies": {
+    "fuse.js": "^7.0.0",
+    "ink": "^5.1.0",
+    "react": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/react": "^18.3.0",
+    "prettier": "^3.3.3",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
