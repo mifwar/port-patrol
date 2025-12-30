@@ -1,6 +1,6 @@
 {
   "name": "port-patrol",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "TUI to inspect listening ports and terminate the owning process.",
   "type": "module",
   "license": "MIT",
